@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 8 - Shopping Cart</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .header {
+            max-width: 900px;
+            margin: 0 auto 30px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #333;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: #03dac6;
+            margin: 0;
+        }
+
+        .back-link {
+            background-color: #555;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .back-link:hover {
+            background-color: #777;
+        }
+
+        #cart-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            gap: 20px;
+        }
+
+        .cart-card {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .cart-card h2 {
+            color: #bb86fc;
+            margin-top: 0;
+        }
+
+        .cart-card p {
+            color: #bdbdbd;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        button {
+            padding: 9px 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .edit-btn {
+            background-color: #aaa;
+            color: #000;
+        }
+
+        .remove-btn {
+            background-color: #cf6679;
+            color: #000;
+        }
+
+        .clear-btn {
+            background-color: #bb86fc;
+            color: #000;
+        }
+
+        .empty {
+            text-align: center;
+            color: #888;
+            margin-top: 40px;
+        }
+
+        .cart-actions {
+            max-width: 900px;
+            margin: 25px auto 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Shopping Cart</h1>
+
+        <a href="index.html" class="back-link">
+            ← Back to Directory
+        </a>
+    </div>
+
+    <div id="cart-container"></div>
+
+    <div class="cart-actions">
+        <button class="clear-btn" onclick="clearCart()">
+            Clear Cart
+        </button>
+    </div>
+
+    <script src="cart.js"></script>
+
+</body>
+</html>
